@@ -19,14 +19,39 @@ const Text3 = document.getElementById("Text3");
 
 const numPics = 3;
 let currentPic = 0;
+let isMobile = false;
 
 console.log(currentPic);
 
 setInterval(autoPic, 4000);
 
 function autoPic() {
-    NextPic();
-    UpdatePic();
+    console.log(isMobile);
+    checkMobile();
+    if (isMobile == false) {
+        NextPic();
+        UpdatePic();
+    } else {
+        Pic1.style.display = "none";
+        Pic2.style.display = "none";
+        Pic3.style.display = "none";
+        Text1.style.display = "none";
+        Text2.style.display = "none";
+        Text3.style.display = "none";
+        optOne.style.display = "none";
+        optTwo.style.display = "none";
+        optThree.style.display = "none";
+
+        return true;
+    }
+}
+
+function checkMobile() {
+    if (window.outerWidth > 600) {
+        isMobile = false;
+    } else {
+        isMobile = true;
+    }
 }
 
 function NextPic() {

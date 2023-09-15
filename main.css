@@ -72,6 +72,47 @@ p {
     font-family: 'Permanent Marker';
 }
 
+.mobileTexts {
+    color: white;
+    text-align: center;
+    margin-left: 30%;
+    margin-top: 50%;
+}
+
+.mobileTexts:hover {
+    text-decoration: underline;
+}
+
+.mobilePics, .mobileTexts {
+    display: none;
+}
+
+.mobilePics {
+    opacity: .5;
+    /* position: fixed; */
+    top: 50%; 
+    background-color: #888888;
+    width: 300px;
+    height: 400px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 1em;
+    border-radius: 1em;
+    border: solid white 5px;
+}
+
+#MPic1 {
+    background-image: url("Pic1.jpg");
+}
+
+#MPic2 {
+    background-image: url("Pic2.jpg");
+}
+
+#MPic3 {
+    background-image: url("Pic3.jpg");
+}
+
 @media screen and (max-width: 600px) {
   #topnav {
     display: none;
@@ -82,7 +123,28 @@ p {
   #logoText {
     display: inline-block;
   }
+  
+#option1 {
+    display: none;
 }
+#option2 {
+    display: none;
+}
+#option3 {
+    display: none;
+}
+
+  .mobilePics{
+    display: inline-block;
+  } 
+  .mobileTexts {
+    display: flex;
+  }
+}
+
+.homePics, .homeTexts {
+    display: none;
+  }
 
 @media screen and (max-width: 500px) {
   #logoText {
@@ -128,7 +190,7 @@ p {
 }
 
 #Pic1 {
-    display: block;
+    display: none;
 }
 
 #Pic2 {
@@ -185,7 +247,7 @@ p {
 }
 
 #Text1 {
-    display: block;
+    display: none;
 }
 
 #Text2 {
