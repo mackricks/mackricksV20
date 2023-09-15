@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=Permanent+Marker&family=Roboto+Mono:wght@500&family=Roboto:wght@300&family=Rubik+Iso&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=Permanent+Marker&family=Roboto+Mono:wght@500&family=Roboto:wght@300&family=Rubik+Iso&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=Permanent+Marker&family=Roboto+Condensed:wght@700&family=Roboto+Mono:wght@500&family=Roboto:wght@300&family=Rubik+Iso&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=Permanent+Marker&family=Roboto+Condensed:wght@700&family=Roboto+Mono:wght@500&family=Roboto:wght@300;400&family=Rubik+Iso&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    /* cursor: url(pointer.png), auto; */
+}
+
+#topnav {
+    background: rgb(49, 44, 44);
+    position: sticky;
+    top: 0;
+}
+
+body {
+    background-color: black;
+}
+
+.links {
+    font-size: 50px;
+    padding-right: 15px;
+    padding-left: 15px;
+    height: 60px;
+    text-decoration: none;
+    color: white;
+    font-family: 'Rubik Iso', cursive;
+    transition: linear all 250ms;
+    display: inline-block;
+    margin-left:-4px;
+}
+.links:hover {
+    background: rgb(151, 6, 6);
+    transform: skew(25deg);
+}
+
+p {
+    font-size: 40px;
+}
+
+#menuIcon, #exitIcon {
+    float: right;
+    border-bottom-left-radius: 0.5em;
+}
+
+#exitIcon {
+    display: none;
+}
+
+#logoIcon {
+    float: left;
+    border-bottom-right-radius: 0.5em;
+}
+
+.icons {
+    background: rgb(49, 44, 44);
+    display: none;
+    width: 60px;
+    height: 60px;
+}
+
+#logoText {
+    display: none;
+    color: red;
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 15px;
+    font-family: 'Permanent Marker';
+}
+
+@media screen and (max-width: 600px) {
+  #topnav {
+    display: none;
+  }
+  .icons {
+    display: block;
+  }
+  #logoText {
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #logoText {
+    font-size: 35px;
+  }
+}
+
+#logo {
+    float: left;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 5px;
+    width: 50px;
+    height: 50px;
+}
+
+#dropdown {
+    background-color: rgb(49, 44, 44);
+    top: 65px;
+    left: 35px;
+    position: relative;
+    float: right;
+    width: 250px;
+    height: 270px;
+    border-radius: 1em;
+    display: none;
+    box-shadow: 5px 10px #888888;
+}
+
+#dropdown a {
+    transition: all 200ms;
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 40px;
+    margin-top: 10px;
+    margin-left: 5px;
+    font-family: 'Rubik Iso', cursive;
+}
+
+#dropdown a:hover {
+    background: rgb(151, 6, 6);
+}
+
+#Pic1 {
+    display: block;
+}
+
+#Pic2 {
+    display: none;
+}
+
+#Pic3 {
+    display: none;
+}
+
+.homePics {
+    opacity: .5;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #888888;
+    animation: fade 4s;
+}
+  
+  @keyframes fade {
+    0% {opacity: .4} 
+    25% {opacity: 1}
+    85% {opacity: 1;}
+    100% {opacity: .4;}
+  }
+
+.arrows {
+    height: 100px;
+    width: 70px;
+    position: fixed;
+}
+
+#rightArrow {
+    top: 50%;
+    left: 80%;
+    transform: translate(-40%, -50%);
+}
+
+#leftArrow {
+    top: 50%;
+    left: 20%;
+    transform: translate(-60%, -50%);
+}
+
+.homeTexts {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    position: fixed;
+    font-size: 50px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+#Text1 {
+    display: block;
+}
+
+#Text2 {
+    display: none;
+}
+
+#Text3 {
+    display: none;
+}
+
+#PicSelect {
+    float: center;
+}
+
+#option1:hover {
+    background-color: #ada5a5;
+    cursor: pointer;
+}
+
+#option2:hover {
+    background-color: #ada5a5;
+    cursor: pointer;
+}
+
+#option3:hover {
+    background-color: #ada5a5;
+    cursor: pointer;
+}
+
+.options {
+    height: 40px;
+    width: 30px;
+    border-radius: 1em;
+    border: solid white 2px;
+    background-color: #888888;
+    display: inline-block;
+    left: 47.5%;
+    top: 40px;
+    position: relative;
+}
+
+.options h1 {
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+    bottom: 7px;
+    position: relative;
+}
