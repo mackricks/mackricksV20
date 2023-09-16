@@ -20,13 +20,30 @@ const Text3 = document.getElementById("Text3");
 const numPics = 3;
 let currentPic = 0;
 let isMobile = false;
+let timer = 1;
 
-console.log(currentPic);
+function Timer() {
+    console.log(timer);
+    timer++;
+    if (timer == 4) {
+        timer = 1;
+        autoPic();
+    }
+}
 
-setInterval(autoPic, 4000);
+function onLoad() {
+    if (window.outerWidth > 600) {
+        Pic1.style.display = "block";
+        Text1.style.display = "block";
+    } else {
+        Pic1.style.display = "none";
+        Text1.style.display = "none";
+    }
+}
+
+setInterval(Timer, 1000);
 
 function autoPic() {
-    console.log(isMobile);
     checkMobile();
     if (isMobile == false) {
         NextPic();
@@ -59,10 +76,6 @@ function NextPic() {
     if (currentPic >= numPics) {
         currentPic = 0;
     }
-
-    
-
-    console.log(currentPic);
 }
 
 // function PrevPic() {
@@ -102,7 +115,8 @@ optThree.addEventListener("click", () => {
 
 function UpdatePic()
 {
-    console.log(currentPic);
+    timer = 0;
+
     switch (currentPic) {
         case 0:
             Pic1.style.display = "block";
