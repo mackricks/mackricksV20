@@ -104,6 +104,7 @@ body {
     animation: fade 4s;
     width: 1000px;
     height: 600px;
+    border-radius: 1em;
 }
   
   @keyframes fade {
