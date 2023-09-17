@@ -10,66 +10,8 @@
     /* cursor: url(pointer.png), auto; */
 }
 
-#topnav {
-    background: rgb(49, 44, 44);
-    position: sticky;
-    top: 0;
-}
-
 body {
     background-color: black;
-}
-
-.links {
-    font-size: 50px;
-    padding-right: 15px;
-    padding-left: 15px;
-    height: 60px;
-    text-decoration: none;
-    color: white;
-    font-family: 'Rubik Iso', cursive;
-    transition: linear all 250ms;
-    display: inline-block;
-    margin-left:-4px;
-}
-.links:hover {
-    background: rgb(151, 6, 6);
-    transform: skew(25deg);
-}
-
-p {
-    font-size: 40px;
-}
-
-#menuIcon, #exitIcon {
-    float: right;
-    border-bottom-left-radius: 0.5em;
-}
-
-#exitIcon {
-    display: none;
-}
-
-#logoIcon {
-    float: left;
-    border-bottom-right-radius: 0.5em;
-}
-
-.icons {
-    background: rgb(49, 44, 44);
-    display: none;
-    width: 60px;
-    height: 60px;
-}
-
-#logoText {
-    display: none;
-    color: red;
-    font-size: 40px;
-    text-align: center;
-    font-weight: bold;
-    margin-top: 15px;
-    font-family: 'Permanent Marker';
 }
 
 .mobileTexts {
@@ -104,28 +46,18 @@ p {
 }
 
 #MPic1 {
-    background-image: url("Pic1.jpg");
+    background-image: url("./Images/Pic1.jpg");
 }
 
 #MPic2 {
-    background-image: url("Pic2.jpg");
+    background-image: url("./Images/Pic2.jpg");
 }
 
 #MPic3 {
-    background-image: url("Pic3.jpg");
+    background-image: url("./Images/Pic3.jpg");
 }
 
 @media screen and (max-width: 600px) {
-  #topnav {
-    display: none;
-  }
-  .icons {
-    display: block;
-  }
-  #logoText {
-    display: inline-block;
-  }
-  
 #option1 {
     display: none;
 }
@@ -148,49 +80,7 @@ p {
     display: none;
   }
 
-@media screen and (max-width: 500px) {
-  #logoText {
-    font-size: 35px;
-  }
-}
 
-#logo {
-    float: left;
-    margin-right: 10px;
-    margin-left: 10px;
-    margin-top: 5px;
-    width: 50px;
-    height: 50px;
-}
-
-#dropdown {
-    background-color: rgb(49, 44, 44);
-    top: 65px;
-    margin-left: 40%;
-    position: relative;
-    float: right;
-    width: 250px;
-    height: 270px;
-    border-radius: 1em;
-    display: none;
-    box-shadow: 5px 10px #888888;
-    position: absolute;
-}
-
-#dropdown a {
-    transition: all 200ms;
-    display: block;
-    color: white;
-    text-decoration: none;
-    font-size: 40px;
-    margin-top: 10px;
-    margin-left: 5px;
-    font-family: 'Rubik Iso', cursive;
-}
-
-#dropdown a:hover {
-    background: rgb(151, 6, 6);
-}
 
 #Pic1 {
     display: none;
