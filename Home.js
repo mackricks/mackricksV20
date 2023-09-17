@@ -12,6 +12,7 @@ const Pic3 = document.getElementById("Pic3");
 const Text1 = document.getElementById("Text1");
 const Text2 = document.getElementById("Text2");
 const Text3 = document.getElementById("Text3");
+const logo = document.getElementById("logo");
 
 // let picOne = true;
 // let picTwo = false;
@@ -21,6 +22,10 @@ const numPics = 3;
 let currentPic = 0;
 let isMobile = false;
 let timer = 1;
+
+logo.addEventListener("click", () => {
+    window.open("https://mackricks.github.io/mackricksV20/","_self");
+});
 
 function Timer() {
     console.log(timer);

@@ -16,4 +16,4 @@ exitIcon.addEventListener("click", () => {
     dropdown.style.display = "none";
     menuIcon.style.display = "block";
     exitIcon.style.display = "none";
-})
+});
