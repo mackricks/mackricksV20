@@ -6,6 +6,10 @@ logo.addEventListener("click", () => {
     window.open("https://mackricks.github.io/mackricksV20/","_self");
 });
 
+mobileLogo.addEventListener("click", () => {
+    window.open("https://mackricks.github.io/mackricksV20/","_self");
+});
+
 menuIcon.addEventListener("click", () => {
     dropdown.style.display = "block";
     menuIcon.style.display = "none";

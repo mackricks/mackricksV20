@@ -27,6 +27,10 @@ logo.addEventListener("click", () => {
     window.open("https://mackricks.github.io/mackricksV20/","_self");
 });
 
+mobileLogo.addEventListener("click", () => {
+    window.open("https://mackricks.github.io/mackricksV20/","_self");
+});
+
 function Timer() {
     console.log(timer);
     timer++;
