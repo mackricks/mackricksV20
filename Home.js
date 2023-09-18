@@ -13,7 +13,8 @@ const Text1 = document.getElementById("Text1");
 const Text2 = document.getElementById("Text2");
 const Text3 = document.getElementById("Text3");
 const logo = document.getElementById("logo");
-
+const mobileLogo = document.getElementById("logoIcon")
+ 
 // let picOne = true;
 // let picTwo = false;
 // let picThree = false;
@@ -22,23 +23,6 @@ const numPics = 3;
 let currentPic = 0;
 let isMobile = false;
 let timer = 1;
-
-logo.addEventListener("click", () => {
-    window.open("https://mackricks.github.io/mackricksV20/","_self");
-});
-
-mobileLogo.addEventListener("click", () => {
-    window.open("https://mackricks.github.io/mackricksV20/","_self");
-});
-
-function Timer() {
-    console.log(timer);
-    timer++;
-    if (timer == 4) {
-        timer = 1;
-        autoPic();
-    }
-}
 
 function onLoad() {
     if (window.outerWidth > 600) {
@@ -49,6 +33,27 @@ function onLoad() {
         Text1.style.display = "none";
     }
 }
+
+logo.addEventListener("click", () => {
+    window.open("https://mackricks.github.io/mackricksV20/","_self");
+});
+
+mobileLogo.addEventListener("click", () => {
+    window.open("https://mackricks.github.io/mackricksV20/","_self");
+});
+
+
+
+function Timer() {
+    console.log(timer);
+    timer++;
+    if (timer == 4) {
+        timer = 1;
+        autoPic();
+    }
+}
+
+
 
 setInterval(Timer, 1000);
 

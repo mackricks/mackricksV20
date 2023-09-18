@@ -1,6 +1,7 @@
 const menuIcon = document.getElementById("menuIcon");
 const exitIcon = document.getElementById("exitIcon");
 const logo = document.getElementById("logo");
+const mobileLogo = document.getElementById("logoIcon")
 
 logo.addEventListener("click", () => {
     window.open("https://mackricks.github.io/mackricksV20/","_self");
