@@ -34,6 +34,19 @@ function onLoad() {
     }
 }
 
+function mobileGamesLinks() {
+    console.log("ifno[");
+    window.open("http://mackricks.github.io/mackricksV20/Games","_self");
+}
+
+function mobileModelsLinks() {
+    window.open("http://mackricks.github.io/mackricksV20/Models","_self");
+}
+
+function mobileSocialsLinks() {
+    window.open("http://mackricks.github.io/mackricksV20/Socials","_self");
+}
+
 logo.addEventListener("click", () => {
     window.open("https://mackricks.github.io/mackricksV20/","_self");
 });

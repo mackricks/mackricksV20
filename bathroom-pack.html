@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="nav-bar.css">
+    <title>MackricksV20 | Models | Bathroom Props Pack</title>
+</head>
+<body>
+
+    <img id="menuIcon" class="icons" src="./Images/menu_icon.png" alt="menu" srcset="">
+    <img id="logoIcon" class="icons" src="./Images/logo.png" alt="logo" srcset="">
+    <img id="exitIcon" class="icons" src="./Images/exit_icon.png" alt="exit" srcset="">
+    <div id="topnav">
+        <a class="links" href="https://mackricks.github.io/mackricksV20/Models">Models</a>
+        <a class="links" href="https://mackricks.github.io/mackricksV20/Games">Games</a>
+        <a class="links" href="https://mackricks.github.io/mackricksV20/About">About</a>
+        <img id="logo" src="./Images/logo.png" alt="logo" srcset="">
+    </div>
+    <div id="dropdown">
+        <a href="Home.html">Models</a>
+        <a href="About.html">Games</a>
+        <a href="About.html">About</a>
+    </div>
+    
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+            }
+        </style>
+
+    <script>
+        const menuIcon = document.getElementById("menuIcon");
+        const exitIcon = document.getElementById("exitIcon");
+        const logo = document.getElementById("logo");
+        const mobileLogo = document.getElementById("logoIcon")
+
+        logo.addEventListener("click", () => {
+            window.open("https://mackricks.github.io/mackricksV20/","_self");
+        });
+
+        mobileLogo.addEventListener("click", () => {
+            window.open("https://mackricks.github.io/mackricksV20/","_self");
+        });
+
+        menuIcon.addEventListener("click", () => {
+            dropdown.style.display = "block";
+            menuIcon.style.display = "none";
+            exitIcon.style.display = "block";
+        });
+
+        exitIcon.addEventListener("click", () => {
+            dropdown.style.display = "none";
+            menuIcon.style.display = "block";
+            exitIcon.style.display = "none";
+        });
+
+        
+    </script>
+
+</body>
+</html>

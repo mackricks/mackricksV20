@@ -31,7 +31,6 @@ body {
 }
 
 .mobilePics {
-    
     /* position: fixed; */
     top: 50%; 
     /* background-color: #888888; */
@@ -104,6 +103,10 @@ body {
     /* width: 1000px;
     height: 600px; */
     border-radius: 1em;
+}
+
+.homePics:hover {
+    cursor: pointer;
 }
   
   @keyframes fade {
