@@ -105,17 +105,7 @@ function NextPic() {
     }
 }
 
-// function PrevPic() {
-//     if (currentPic == 0)
-//        {
-//         currentPic = numPics - 1;
-//         return;
-//        }
 
-//        currentPic--;
-
-//        console.log(currentPic);
-// }
 
 // rightArrow.addEventListener("click", () => {
 //     NextPic();
