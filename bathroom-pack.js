@@ -11,14 +11,8 @@ const Pic4 = document.getElementById("pic4");
 const rightArrow = document.getElementById("right_arrow");
 const leftArrow = document.getElementById("left_arrow");
 
-const gdm = document.getElementById("gdm");
-
 const numPics = 4;
 let currentPic = 0;
-
-gdm.addEventListener("click", () => {
-    window.open("https://www.gamedevmarket.net/asset/bathroom-props-pack","_self");
-});
 
 leftArrow.addEventListener("click", () => {
     PrevPic();

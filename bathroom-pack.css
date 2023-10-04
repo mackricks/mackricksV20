@@ -22,28 +22,15 @@ body {
     display: block;
 }
 
-@media screen and (max-width:600px) {
 
-    #container {
-        position: absolute;
-        padding: 50px;
-    }
-    .pics{
-        width: 300px;
-        height: 169px;
-    }
-    #model {
-        width: 400px;
-        height: 400px;
-    }
-
-}
 
 .pics {
     border-radius: 5px;
     margin-top: 20px;
     margin-left: 10px;
     display: none;
+    width: 600px;
+    height: 338px;
 }
 
 #container {
@@ -53,14 +40,25 @@ body {
     z-index: 1;
 }
 
-#gdm {
+#gdm, #zip{
     width: 130px;
     height: 80px;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 5px;
     /* margin-top: 25px; */
     border-radius: 5px;
+    display: inline-block;
+}
+
+#zip {
+    background-color: blue;
+    float: left;
+}
+
+#zip h1 {
+    text-align: center;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 1.5em;
 }
 
 .arrows {
@@ -84,6 +82,15 @@ body {
     transition: height 200ms;
 }
 
+#zip:hover {
+    cursor: pointer;
+    /* opacity: 0.5; */
+    width: 140px;
+    height: 90px;
+    transition: width 200ms;
+    transition: height 200ms;
+}
+
 #arrowctn {
     display: block;
     width: 800px;
@@ -92,4 +99,20 @@ body {
 
 #dropdown {
     z-index: 2;
+}
+@media screen and (max-width:600px) {
+
+    #container {
+        position: absolute;
+        padding: 50px;
+    }
+    .pics{
+        width: 300px;
+        height: 169px;
+    }
+    #model {
+        width: 400px;
+        height: 400px;
+    }
+
 }

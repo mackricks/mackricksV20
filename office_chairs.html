@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="nav-bar.css">
     <link rel="stylesheet" href="bathroom-pack.css">
-    <title>MackricksV20 | Models | Bathroom Props Pack</title>
+    <title>MackricksV20 | Models | 3D Office Chairs</title>
     <link rel="icon" type="image/x-icon" href="./Images/logo.png">
 </head>
 <body onload="UpdatePic()">
@@ -28,26 +28,27 @@
 <div id="container">
     <div id="model">
         <h1>Bathroom Props Pack</h1>
-        <img src="Bathroom-PropsPack/bathroom-props (3).png" alt="" class="pics" id="pic1">
-        <img src="Bathroom-PropsPack/sinc.png" alt="" class="pics" id="pic2">
-        <img src="Bathroom-PropsPack/doors.png" alt="" class="pics" id="pic3">
-        <img src="Bathroom-PropsPack/toilet.png" alt="" class="pics" id="pic4">
+        <img src="OfficeChairs/image1.png" alt="" class="pics" id="pic1">
+        <img src="OfficeChairs/image2.png" alt="" class="pics" id="pic2">
+        <img src="OfficeChairs/image3.png" alt="" class="pics" id="pic3">
+        <img src="OfficeChairs/image4.png" alt="" class="pics" id="pic4">
         <div id="arrowctn">
             <img src="Images/left_arrow.png" alt="" id="left_arrow" class="arrows">
             <img src="Images/right_arrow.png" alt="" id="right_arrow" class="arrows">
         </div>
         <h1>€4.00 | Get it in:</h1>
         <img src="Images/no-cover.png" alt="" id="gdm">
+        <div id="zip"><h1>Download Zip</h1></div>
 </div>
 </div>
-
 <script>
-const gdm = document.getElementById("gdm");
+    const zip = document.getElementById("zip");
+    
+        zip.addEventListener("click", () => {
+        window.open("OfficeChairs/OfficeChairs.zip","_self");
+    });
+    </script>
 
-    gdm.addEventListener("click", () => {
-    window.open("https://www.gamedevmarket.net/asset/bathroom-props-pack","_self");
-});
-</script>
     <script src="bathroom-pack.js"></script>
 </body>
 </html>
