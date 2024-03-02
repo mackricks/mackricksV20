@@ -22,3 +22,10 @@ body {
     font-family: 'Exo 2', sans-serif;
     text-align: center;
 }
+
+@media all and (max-width: 445px) {
+    iframe {
+        width: 452px;
+        height: 67px;
+    }
+}
