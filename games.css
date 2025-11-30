@@ -23,9 +23,3 @@ body {
     text-align: center;
 }
 
-@media all and (max-width: 445px) {
-    iframe {
-        width: 452px;
-        height: 67px;
-    }
-}
